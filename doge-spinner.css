@@ -1,0 +1,133 @@
+spinner {
+  display: none;
+}
+
+@-webkit-keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1.5);
+  }
+}
+spinner {
+  position:absolute;
+  width:300px;
+  height:300px;
+  left:50%;
+  top: 50%;
+  margin-top:-132px;
+  margin-left:-132px;
+}
+
+doge {
+  position:absolute;
+  -webkit-animation-name: rotator;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  z-index: 900;
+}
+
+@-webkit-keyframes text-expand {
+  0% { 
+    font-size:0rem;
+  }
+  20% {
+    font-size:24px;
+  }
+  100% {
+    font-size:24px;
+  }
+}
+@-webkit-keyframes text-expand2 {
+  0% { 
+    font-size:0rem;
+  }
+  20% {
+    font-size:0rem;
+  }
+  40% {
+    font-size: 24px; 
+  }
+  100% {
+    font-size:24px;
+  }
+}
+
+@-webkit-keyframes text-expand3 {
+  0% { 
+    font-size:0rem;
+  }
+  40% {
+    font-size: 0rem; 
+  }
+  60% {
+    font-size: 24px; 
+  }
+  100% {
+    font-size: 24px;
+  }
+}
+
+@-webkit-keyframes text-expand4 {
+  0% { 
+    font-size:0rem;
+  }
+  60% {
+    font-size:0rem; 
+  }
+  80% {
+    font-size:24px; 
+  }
+  100% {
+    font-size:24px;
+  }
+}
+
+wow, such1, such2, such3 {
+  font-family: "Courier New";
+  font-size:24px;
+  -webkit-animation-name: text-expand;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  z-index: 901;
+}
+
+wow {
+  color: #FE0001;
+  position:absolute;
+  left:45%;
+  top:5%;
+  -webkit-animation-name: text-expand;
+}
+
+such1 {
+  color: #6FFF00;
+  position:absolute;
+  left:3%;
+  top:30%;
+  -webkit-animation-name: text-expand2;
+}
+
+such2 {
+  color: #4D4DFF;
+  position:absolute;
+  left:25%;
+  top:50%;
+  -webkit-animation-name: text-expand3;
+}
+such3 {
+  color: #FFFF00;
+  position:absolute;
+  left:15%;
+  top:70%;
+  -webkit-animation-name: text-expand4;
+}
+#occluder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  opacity: 0.6;
+  z-index: 899;
+}
